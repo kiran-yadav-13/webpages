@@ -1,0 +1,208 @@
+body {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0; 
+}
+
+nav{
+  display: flex;
+  padding: 0.7rem;
+  background-color: #fff;
+  color:  #111;
+  box-shadow: 5px 0 10px   #111;
+  position: sticky;
+  top: 0;
+}
+nav .logo{
+  display: flex;
+}
+.logoName h3{
+  font-family: 'Cabin', sans-serif;
+  margin: 0.3rem 0rem 0 1rem;
+}
+.logoName h5{
+  font-family: 'Cabin', sans-serif;
+  margin: 0.1rem 0rem 0.1rem 1rem;
+}
+
+nav #logoImage{
+  height: 3rem;
+  margin:0  0.5rem 0 0.5rem;
+}
+.resultPage{
+  margin-bottom: 2rem;
+}
+.personicon{
+  display: flex;
+  justify-content: center;
+  margin: 2.5rem;
+  
+}
+.personicon .iconOutline{
+ padding: 1.5rem;
+ background-color: #e9e5e5;
+  border-radius: 50%;
+  box-shadow: 10px 10px 5px    #7c7a7a}
+.personicon i{
+  font-size: 5rem;
+  color:  #111;;
+  
+}
+.resultPage h2{
+  margin: 1rem;
+  font-family: 'Cabin', sans-serif;
+  color: #111;
+}
+
+.collapsable_btn {
+ 
+  margin: 1rem 0 1rem 1rem;
+    background-color: #7c7a7a;
+    color: white;
+    cursor: pointer;
+    padding: 1rem;
+    width: 95%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s ;
+    box-shadow: 8px 8px 10px  #4b4a4a;
+  }
+  .collapsable_btn span{
+   float: right;
+  }
+  
+  
+  .active, .collapsable_btn:hover {
+    background-color: #111;
+  }
+
+  .collapsable_details {
+    display: none;
+    padding: 1rem;
+    background-color: rgb(252, 247, 247);
+    max-height: 0;
+    width: 90vw;
+    overflow: hidden;
+    border-radius: 1rem;
+    transition: max-height 0.2s ease-out;
+    box-shadow: 8px 8px 10px  #3d3d3d;
+  }
+  .result_table{
+    margin-top: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 90vw;
+  }
+  .result_table td, .result_table th {
+    border: 1px solid #ddd;
+    padding: 1rem;
+  }
+  
+  .result_table tr:nth-child(even){background-color: #f2f2f2;}
+  
+  .result_table tr:hover {background-color: #ddd;}
+
+  .result_table th {
+   font-weight: normal;
+    text-align: left;
+  
+  }
+  footer {
+    float:bottom;
+    position: sticky;
+    margin-top: auto;
+    background: #111;
+    padding-top: 1rem;
+    color: #fff;
+  }
+  
+  .footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .footer-content h3 {
+    font-size: 1rem;
+    margin-bottom: 0.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+  
+  }
+  
+  .footer-content p {
+    max-width: 500px; 
+    line-height: 0.7rem;
+    font-size: 0.7rem;
+    color: #cacdd2;
+  }
+  
+  .socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem 0 0.8rem 0;
+  }
+  
+  .socials li {
+    margin: 0 1rem 0 0
+  }
+  
+  .socials a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px;
+  }
+  
+  .socials a i {
+    font-size: 1rem;
+    width: 1em;
+    transition: color 0.4s ease;
+  }
+  
+  .socials a:hover i {
+    color: aqua;
+  }
+  
+  .footer-bottom {
+    background: #000;
+    padding:0.5rem 0 0.5rem 0;
+    text-align: center;
+  }
+  
+  .footer-bottom p {
+    display: flex;
+    justify-content: center;
+    font-size: 0.8rem;
+    word-spacing: 2px;
+  }
+  
+  .footer-bottom p a {
+    color: #ccc;
+    font-size: 0.8rem;
+    text-decoration: none;
+  }
+  
+  .footer-bottom span {
+    text-transform: uppercase;
+   
+  }
+  
+  
+  @media (max-width: 500px) {
+    *{
+      font-size: 95%;
+    }
+    .personicon i{
+      font-size: 3rem;
+    }
+    .footer-bottom p {
+      float: none;
+    }
+  
+   
+  }
